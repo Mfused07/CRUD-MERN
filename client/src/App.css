@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica;
+}
+
+input,button {
+  
+  height: 20px;
+  font-size: 15px;
+  font-family: Helvetica;
+  margin: 5px;
+
+  
+}
+
+input {
+  box-sizing: border-box;
+  height: 39px;
+  width: 426px;
+  border: 1px solid #E6E6E6;
+  border-radius: 20px;
+}
+
+label {
+  height: 24px;
+        width: 231px;
+        color: #333333;
+        font-family: "Open Sans";
+        font-size: 14px;
+        line-height: 24px;
+}
+button {
+  /* height: 38px;
+  width: 243px;
+  border-radius: 20px;
+  background-color: #56e851; */
+  border: 2px solid black;
+  padding: 30px 60px;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+  font-family: sans-serif;
+  transition: all .5s;
+
+
+}
+body{
+
+background: #3d8cc9;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+button:before{
+  width: 100%;
+  height: 100%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top:  -100%;
+  left: -100%;
+  background: #212121;
+  transition: all .5s;
+  z-index: -1;
+  
+}
+button:hover{
+  color: white;
+}
+button:hover:before{			
+    top: 0;
+    left: 0;
+
+}
+
+.foodView {
+  border: 2px solid black;
+  height: 280px;
+  width: 500px;
+  margin: 10px;
+}
